@@ -1,0 +1,15 @@
+A tree is an appropriate structure for the doctor management system because it naturally represents hierarchical relationships.
+In a hospital, doctors report to other doctors in a chain of command, which mirrors a parent–child structure.
+Using a binary tree allows each doctor to have up to two direct reports, making it easy to model leadership relationships and traverse them in meaningful ways.
+
+Preorder, inorder, and postorder traversals each serve different real-world purposes.
+Preorder traversal is useful when a supervisor should be processed before their team, such as when sending top-down announcements or assigning tasks starting from leadership.
+Inorder traversal is helpful when processing nodes in a left-to-right logical order, which could be useful for structured reviews or audits. 
+Postorder traversal is useful when subordinates must be handled before a manager, such as when collecting reports or deallocating resources.
+
+Heaps are ideal for simulating real-time systems like emergency intake because they efficiently maintain priority order.
+A min-heap ensures that the patient with the lowest urgency score is always at the root and can be accessed in constant time.
+Insertions and removals run in O(log n), which makes the system fast even with many incoming patients.
+This reflects real hospital workflows where urgent cases must always be handled first without scanning the entire list of patients.
+
+Together, these data structures demonstrate how choosing the right structure leads to efficient, real-world solutions.
